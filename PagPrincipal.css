@@ -1,0 +1,104 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif;
+     
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+article {
+    background: linear-gradient(#B3E4A2, #637E5A);
+    border-radius: 15px;
+    padding: 1rem;
+    width: 500px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.50);
+}
+
+ figure {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+        img {
+        border-radius: 60px;
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.50);
+    }
+}
+
+
+div {
+      position: relative;
+      z-index: 1;
+      padding: 2em;
+      border-radius: 60px;
+      background: transparent;
+      color: white;
+      font-size: 1em;
+      text-align: center;
+      width: 300px;
+      margin: 2em auto;
+      box-sizing: border-box;
+
+        &:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 10px; 
+      border-radius: inherit;
+      background: linear-gradient(to top,#B3E4A2 33%, #637E5A 66%);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: -1;
+    }
+    }
+
+figcaption {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    background-image: radial-gradient(#90D876 40%, #000000 60%);
+    background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    filter: drop-shadow(5px 5px 5px #383838);
+}
+
+section {
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+        
+
+        .button {
+        display: flex; 
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        color: #B3E4A2;
+        background-image: linear-gradient(to right, #000000 33%, #666666 66%);
+        border-radius: 3rem;
+        padding: 0.6rem 1.25rem;
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-bottom: 0.5em;
+        text-decoration: none;
+        transition: transform 0.3s ease, color 0.3s ease;
+            &:hover {
+                color: #1336c3;
+                transform: scale(1.1);
+            }
+        }
+}
+
+
+

@@ -1,0 +1,134 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif;
+     
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.cardAna {
+    background: linear-gradient(#F79804, #593813);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 500px;
+    color: #33231E;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.50);
+
+        figure {
+        margin-bottom: 1.5rem;
+        text-align: center;
+            img {
+            border-radius: 60px;
+}
+}
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.divAna {
+      position: relative;
+      z-index: 1;
+      padding: 2em;
+      border-radius: 60px;
+      background: transparent;
+      width: 400px;
+      margin: 2em auto;
+      box-sizing: border-box; /*Hace que el padding y los bordes se incluyan dentro del ancho total del bloque, en lugar de sumarse. */
+       
+        &:before {
+        content: "";  /*Crea un pseudoelemento vacío antes del contenido de .divAna. */
+        position: absolute;
+        inset: 0; /*Es un atajo que equivale a top: 0; right: 0; bottom: 0; left: 0;. El pseudoelemento se expande para cubrir completamente el bloque.*/
+        padding: 10px; 
+        border-radius: inherit;
+        background: linear-gradient(to top,#ECD3A4 33%, #33231E 66%);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0); /*Esta es una máscara que indica qué partes del elemento deben mostrarse:La parte central (content-box) se hace transparente. 
+    El resto se mantiene visible, generando el efecto de un borde externo.*/
+        -webkit-mask-composite: xor; /* Combina las máscaras con una operación "XOR", que recorta la parte interior, dejando solo el borde. */
+        mask-composite: exclude; /*Hace lo mismo pero es la versión estándar para otros navegadores (no solo WebKit como Safari o Chrome). */
+        z-index: -1;
+        }
+    }
+
+figcaption {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-image: radial-gradient(#ECD3A4 45%, #33231E 55%);
+    background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    filter: drop-shadow(5px 5px 5px #383838);
+}
+
+section {
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+        h2 {
+        color: black;
+        background-image: radial-gradient(#ECD3A4 33%, #33231E 66%);
+        margin-top: 0.5rem;
+        margin-right: 90px;
+        margin-left: 90px;
+        border-radius: 60px;
+        padding-bottom: 5px;
+}
+        p {
+          font-size: 1.5em;  
+        }
+
+            
+}
+
+div {
+    text-align: center;
+
+    button {
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-image: radial-gradient(#ECD3A4 33%, #33231E 66%);
+    margin: auto;
+    border-radius: 60px;
+    padding: 5px;
+}
+}
+
+.button {
+    display: flex; 
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-image: radial-gradient(#ECD3A4 33%, #33231E 66%);
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-right: 40%;
+    margin-left: 40%;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+        &:hover {
+    color: #1336c3;
+    transform: scale(1.1);
+}
+}
+
+
+
+

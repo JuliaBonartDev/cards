@@ -1,0 +1,118 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif;
+     
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+}
+
+.cardSergi {
+    background: linear-gradient(#C84D14, #62260A);
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 500px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.50);
+
+        figure {
+        margin-bottom: 1.5rem;
+        text-align: center;
+
+            img {
+        border-radius: 40px;
+    }
+    }
+}
+
+.divSergi {
+      position: relative;
+      z-index: 1;
+      padding: 2em;
+      border-radius: 60px;
+      background: transparent;
+      color: white;
+      font-size: 1em;
+      text-align: center;
+      width: 400px;
+      margin: 2em auto;
+      box-sizing: border-box;
+
+        &:before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 10px; 
+        border-radius: inherit;
+        background: linear-gradient(to top,#666666 33%, #000000 66%);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: -1;
+        }
+    }
+
+figcaption {
+    text-align: center;
+    font-size: 43px;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-weight: bold;
+    background-color: #666666;
+    background-image: radial-gradient(#666666 30%, #000000 60%);
+    background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    filter: drop-shadow(5px 5px 5px #383838);
+}
+
+section {
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 30px;
+
+    h2 {
+    font-size: 1.6em;
+    color: black;
+    background-image: radial-gradient(#FFFFFF 33%, #999999 66%);
+    /* margin-top: 1rem;
+    margin-right: 40px;
+    margin-left: 40px; */
+    margin: 1rem 3rem;
+    border-radius: 60px;
+    padding-bottom: 5px;
+}
+
+    p {
+          font-size: 1.3em;  
+        }
+
+    ul {
+        font-size: 1.3em;
+        list-style-position: inside;
+    }
+}
+
+.button {
+    display: flex; 
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-image: radial-gradient(#FFFFFF 33%, #999999 66%);
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-right: 40%;
+    margin-left: 40%;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+        &:hover {
+    color: #1336c3;
+    transform: scale(1.1);
+}
+}
