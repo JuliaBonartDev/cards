@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-.cardAntonio {
+.cardJavier {
     background: linear-gradient(#0DA2D0, #276681);
     border-radius: 15px;
     padding: 1rem;
@@ -29,7 +29,7 @@ body {
     }
 }
 
-.divAntonio {
+.divJavier {
       position: relative;
       z-index: 1;
       padding: 2em;

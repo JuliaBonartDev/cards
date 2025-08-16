@@ -32,7 +32,7 @@ article {
 }
 
 
-div {
+.F5 {
       position: relative;
       z-index: 1;
       padding: 2em;
@@ -44,8 +44,9 @@ div {
       width: 300px;
       margin: 2em auto;
       box-sizing: border-box;
+    }
 
-        &:before {
+.F5::before {
       content: "";
       position: absolute;
       inset: 0;
@@ -59,8 +60,7 @@ div {
       mask-composite: exclude;
       z-index: -1;
     }
-    }
-
+    
 figcaption {
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
